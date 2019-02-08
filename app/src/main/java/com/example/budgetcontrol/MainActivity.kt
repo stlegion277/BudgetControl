@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(
                     applicationContext,
 //                    if (items.isEmpty()) ClassActivity::class.java else AddCategoriesActivity::class.java
-                ClassActivity::class.java
+                AddCategoriesActivity::class.java
                )
 
                 startActivity(intent)

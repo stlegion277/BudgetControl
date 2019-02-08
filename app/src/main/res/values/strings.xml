@@ -1,10 +1,7 @@
 <resources>
     <string name="app_name">BudgetControl</string>
-    <array name="CategoriesList">
-        <item>Food</item>
-        <item>Education</item>
-        <item>Transport</item>
-        <item>Clothes</item>
-        <item>Entertainment</item>
-    </array>
+    <string name="add_button">+</string>
+    <string name="del_button">x</string>
+    <string name="category">Категории</string>
+
 </resources>

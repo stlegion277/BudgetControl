@@ -1,9 +1,13 @@
 package com.example.budgetcontrol
 
+import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.Toolbar
 import kotlinx.android.synthetic.main.activity_add_categories.*
+import kotlinx.android.synthetic.main.activity_class.*
 
 class AddCategoriesActivity : AppCompatActivity(), CategoriesView {
 
@@ -16,6 +20,10 @@ class AddCategoriesActivity : AppCompatActivity(), CategoriesView {
 
         categoriesRecyclerView.layoutManager = LinearLayoutManager(this)
         categoriesRecyclerView.adapter = adapter
+        addButton.setOnClickListener {
+            val intent = Intent(this, ClassActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {

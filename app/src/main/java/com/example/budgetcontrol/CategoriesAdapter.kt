@@ -20,7 +20,6 @@ class CategoriesAdapter : RecyclerView.Adapter<CategoriesHolder>() {
         CategoriesHolder(LayoutInflater.from(parent.context).inflate(R.layout.activity_textview_forrecycleview, parent, false))
 
     fun setCategories(categories:List<String>) {
-        this.categories.clear()
         this.categories.addAll(categories)
         notifyDataSetChanged()
     }
@@ -33,6 +32,6 @@ class CategoriesAdapter : RecyclerView.Adapter<CategoriesHolder>() {
 
 class CategoriesHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(name: String) {
-        itemView.categories_name.text = name
+        itemView.nameTV.text = name
     }
 }
