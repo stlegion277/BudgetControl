@@ -7,12 +7,15 @@ import android.view.ViewGroup
 import com.example.budgetcontrol.R
 import kotlinx.android.synthetic.main.activity_textview_forrecycleview.view.*
 
-class CategoriesAdapter : RecyclerView.Adapter<CategoriesHolder>() {
+class CategoriesAdapter(private val callback: (Int) -> Unit): RecyclerView.Adapter<CategoriesHolder>() {
 
     private val categories: MutableList<String> = mutableListOf()
 
     override fun onBindViewHolder(holder: CategoriesHolder, position: Int) {
         holder.bind(categories[position])
+        holder.itemView.setOnClickListener{
+            callback(position)
+        }
     }
 
     override fun getItemCount(): Int = categories.size

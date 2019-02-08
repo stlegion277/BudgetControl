@@ -2,14 +2,22 @@ package com.example.budgetcontrol.Categories
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import com.example.budgetcontrol.Purchases.PurchasesActivity
 import com.example.budgetcontrol.R
 import kotlinx.android.synthetic.main.activity_add_categories.*
 
 class AddCategoriesActivity : AppCompatActivity(), CategoriesView {
 
-    private val adapter = CategoriesAdapter()
+    private val adapter = CategoriesAdapter{
+        val intent = Intent(this, PurchasesActivity::class.java)
+            .apply {
+                putExtra(EXTRA_MESSAGE, 1)
+            }
+        startActivity(intent)
+    }
     private val presener = AddCategoriesPresenter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
