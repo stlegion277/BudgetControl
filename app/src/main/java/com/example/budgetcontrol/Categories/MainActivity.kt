@@ -1,9 +1,10 @@
-package com.example.budgetcontrol
+package com.example.budgetcontrol.Categories
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
+import com.example.budgetcontrol.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,9 +1,10 @@
-package com.example.budgetcontrol
+package com.example.budgetcontrol.Categories
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.budgetcontrol.R
 import kotlinx.android.synthetic.main.activity_textview_forrecycleview.view.*
 
 class CategoriesAdapter : RecyclerView.Adapter<CategoriesHolder>() {
@@ -17,7 +18,13 @@ class CategoriesAdapter : RecyclerView.Adapter<CategoriesHolder>() {
     override fun getItemCount(): Int = categories.size
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): CategoriesHolder =
-        CategoriesHolder(LayoutInflater.from(parent.context).inflate(R.layout.activity_textview_forrecycleview, parent, false))
+        CategoriesHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.activity_textview_forrecycleview,
+                parent,
+                false
+            )
+        )
 
     fun setCategories(categories:List<String>) {
         this.categories.addAll(categories)

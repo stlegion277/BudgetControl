@@ -1,4 +1,4 @@
-package com.example.budgetcontrol
+package com.example.budgetcontrol.Categories
 
 class AddCategoriesPresenter {
     private var view: CategoriesView? = null

@@ -1,13 +1,11 @@
-package com.example.budgetcontrol
+package com.example.budgetcontrol.Categories
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.Toolbar
+import com.example.budgetcontrol.R
 import kotlinx.android.synthetic.main.activity_add_categories.*
-import kotlinx.android.synthetic.main.activity_class.*
 
 class AddCategoriesActivity : AppCompatActivity(), CategoriesView {
 

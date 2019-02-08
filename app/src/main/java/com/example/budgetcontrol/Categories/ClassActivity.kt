@@ -1,11 +1,9 @@
-package com.example.budgetcontrol
+package com.example.budgetcontrol.Categories
 
-import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
+import com.example.budgetcontrol.R
 import kotlinx.android.synthetic.main.activity_class.*
 
 class ClassActivity : AppCompatActivity() {
